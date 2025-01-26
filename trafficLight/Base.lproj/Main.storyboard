@@ -24,7 +24,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Y4F-6B-jew" userLabel="Stack View of circles">
                                         <rect key="frame" x="25" y="0.0" width="100" height="416"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgV-Ip-uGO" userLabel="GreenCircle">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgV-Ip-uGO" userLabel="RedCircle">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
@@ -36,7 +36,7 @@
                                                 <rect key="frame" x="0.0" y="158" width="100" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="759-36-glI" userLabel="RedCircle">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="759-36-glI" userLabel="GreenCircle">
                                                 <rect key="frame" x="0.0" y="316" width="100" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </view>
