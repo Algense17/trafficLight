@@ -17,15 +17,17 @@ final class ViewController: UIViewController {
     @IBOutlet weak var buttonSwichLabel: UIButton!
     
     var isFirstTab = true
+    let lightOn = 1.0
+    let lightOff = 0.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         redCircleView.layer.cornerRadius = 50
-        redCircleView.alpha = 0.3
+        redCircleView.alpha = lightOff
         yellowCircleView.layer.cornerRadius = 50
-        yellowCircleView.alpha = 0.3
+        yellowCircleView.alpha = lightOff
         greenCircleView.layer.cornerRadius = 50
-        greenCircleView.alpha = 0.3
+        greenCircleView.alpha = lightOff
         
         buttonSwichLabel.layer.cornerRadius = 10
     }
@@ -34,18 +36,18 @@ final class ViewController: UIViewController {
         
         if isFirstTab {
             buttonSwichLabel.setTitle("Next", for: .normal)
-            redCircleView.alpha = 1
+            redCircleView.alpha = lightOn
             isFirstTab = false
         } else {
-            if redCircleView.alpha == 1 {
-                redCircleView.alpha = 0.3
-                yellowCircleView.alpha = 1
-            } else if yellowCircleView.alpha == 1 {
-                yellowCircleView.alpha = 0.3
-                greenCircleView.alpha = 1
-            } else if greenCircleView.alpha == 1 {
-                redCircleView.alpha = 1
-                greenCircleView.alpha = 0.3
+            if redCircleView.alpha == lightOn {
+                redCircleView.alpha = lightOff
+                yellowCircleView.alpha = lightOn
+            } else if yellowCircleView.alpha == lightOn {
+                yellowCircleView.alpha = lightOff
+                greenCircleView.alpha = lightOn
+            } else if greenCircleView.alpha == lightOn {
+                redCircleView.alpha = lightOn
+                greenCircleView.alpha = lightOff
             }
         }
     }
